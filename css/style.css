@@ -1,0 +1,320 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+}
+
+h1 {
+    margin: 50px;
+    color: white;
+    font-size: 3rem;
+    font-family: "Monospace Courier New", Monospace;
+}
+
+h2 {
+    text-align: center;
+    font-size: 2.5rem;
+    padding: 30px;
+    font-family: "Monospace Courier New", Monospace;
+}
+
+h3 {
+    font-size: 1.1rem;
+    font-family: "Monospace Courier New", Monospace;
+}
+
+h4 {
+    font-size: 2rem;
+    text-align: center;
+    padding-bottom: 3rem;
+    font-family: "Monospace Courier New", Monospace;
+}
+
+button {
+    align-items: center;
+    border: solid 2px #1D3B48;
+    padding: 10px 30px 10px 30px;
+    background-color: #1D3B48;
+    border-radius: 10px;
+    margin-bottom: 30px;
+}
+
+button a {
+    align-items: center;
+    text-decoration: none;
+    color: #FFFFFF;
+}
+
+button:hover {
+    transition: all 1.5s ease;
+    transform: scale(1.2);
+}
+
+nav {
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    margin: 0px 100px;
+}
+
+.icon-image {
+    width: 100px;
+    margin-right: auto;
+    border: 2px solid black;
+    border-radius: 10px;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    padding: 10px;
+    background-color: white;
+}
+
+nav a {
+    color: gray;
+    text-decoration: none;
+    padding: 20px;
+}
+
+nav a:hover {
+    border: 2px solid black;
+    background-color: black;
+    color: white;
+    border-radius: 10px;
+    padding: 10px 20px 10px 20px;
+}
+
+.center-container {
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+header {
+    text-align: center;
+    padding: 10% 20%;
+}
+
+header p {
+    color: white;
+    padding-bottom: 3rem;
+}
+
+header a {
+    text-decoration: none;
+    color: white;
+    padding: 10px 20px;
+    margin: 10px;
+    border: 1px solid white;
+    border-radius: 10px;
+    size: 20px;
+}
+
+header a:hover {
+    background-color: orange;
+    color: black;
+}
+
+.background-image {
+    background-image: url(/Images/bass-wallpaper.jpg);
+}
+
+#cards {
+    display: flex;
+    align-items: top;
+    justify-content: center;
+    gap: 2%;
+    padding-bottom: 50px;
+    margin: auto;
+}
+
+
+#producten {
+    margin-top: 50px;
+    margin-bottom: 100px;
+    flex: 1;
+    margin: auto;
+}
+
+.card-contents {
+    flex-direction: column;
+    border: 3px solid black;
+    border-radius: 10px;
+    max-width: 30%;
+    margin-bottom: 3rem;
+}
+
+.card-contents-txt {
+    padding: 1rem;
+}
+
+.rating {
+    display: flex;
+    flex: 1;
+    flex-direction: row;
+}
+
+.rating img {
+    width: 10%;
+}
+
+.card-contents-img {
+    display: flex;
+    justify-content: center;
+    border-bottom: 3px solid black;
+    padding: 2rem 0rem;
+}
+
+.card-contents-img img {
+    max-height: 200px;
+    min-height: 200px;
+}
+
+.card-contents button {
+    margin-top: 1rem;
+}
+
+.line {
+    background-color: #356F89;
+    height: 2px;
+}
+
+#form-background {
+    background-color: #DBDBDB;
+    padding-top: 3rem;
+    padding-bottom: 3rem;
+}
+
+form {
+    max-width: 600px;
+    margin: auto;
+}
+
+input:valid {
+    border: solid 2px green;
+}
+
+.spacing {
+    padding: 10px;
+}
+
+.inputfield {
+    padding: 10px;
+    border-radius: 4px;
+    border: 1px solid grey;
+    width: 100%;
+}
+
+.col-2 {
+    display: flex;
+    gap: 20px;
+}
+
+.col {
+    flex: 1;
+}
+
+.submit-btn {
+    color: white;
+    width: 100%;
+}
+
+.submit-btn:hover {
+    transition: none;
+    transform: none;
+}
+
+.nieuwsbrief {
+    display: flex;
+}
+
+.keuze {
+    margin: 10px 20px 10px 0px;
+}
+
+footer {
+    padding: 25px 70px;
+    background-color: #182D36;
+}
+
+footer a {
+    padding-left: 15px;
+    text-decoration: none;
+    font-size: 1rem;
+    color: gray;
+}
+
+#copyright {
+    color: lightgray;
+    font-size: 1rem;
+}
+
+#right-col {
+    text-align: right;
+}
+
+.icons {
+    max-width: 40px;
+    margin-right: auto;
+}
+
+@media (width <=960px) {
+
+    #cards {
+        flex-direction: column;
+        width: 100vw;
+        gap: 2rem;
+        justify-content: center;
+    }
+
+    .card-contents {
+        max-width: 100%;
+        margin: 0rem 1rem;
+    }
+
+    #form-background {
+        padding: 1rem;
+    }
+}
+
+@media (width <=480px) {
+
+    header {
+        padding: 1rem;
+        margin-bottom: 4rem;
+    }
+
+    nav {
+        flex-direction: column;
+        justify-content: center;
+        width: 100vw;
+        margin: auto;
+        padding: 1rem;
+    }
+
+    nav a {
+        display: flex;
+        width: 100%;
+        justify-content: center;
+    }
+
+    nav .icon-image {
+        justify-content: center;
+        margin: auto;
+        margin-bottom: 1rem;
+    }
+
+    footer {
+        padding: 1rem;
+    }
+
+    footer a {
+        display: flex;
+        padding: 0;
+        padding-bottom: 2rem;
+    }
+
+    .col-2 {
+        flex-direction: column;
+    }
+
+}
